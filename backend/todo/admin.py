@@ -1,7 +1,10 @@
 from django.contrib import admin
 
-from backend.todo.models import TODO
+from .models import TODO
 
 
 # Register your models here.
-admin.site.register(TODO)
+@admin.register(TODO)
+class TodoAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description', 'completed')
+
