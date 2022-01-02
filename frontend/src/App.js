@@ -17,6 +17,13 @@ class App extends Component {
 		};
 	}
 
+	componentDidMount() {
+		this.refreshList();
+	}
+	refreshList = () => {
+		
+	}
+
 	toggle = () => {
 		this.setState({ modal: !this.state.modal });
 	};
