@@ -37,7 +37,7 @@ class App extends Component {
 		if (item.id) {
 			axios
 				.put(`/api/todos/${item.id}/`, item)
-				.then((res) => this.refreshList());
+				
 			return;
 		}
 		axios.post("/api/todos/", item).then((res) => this.refreshList());
