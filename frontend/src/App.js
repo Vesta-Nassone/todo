@@ -134,7 +134,7 @@ class App extends Component {
 	render() {
 		return (
 			<main className="container">
-				<h1 className="text-white text-uppercase text-center my-4">
+				<h1 className="text-uppercase text-center my-4">
 					Todo app
 				</h1>
 				<div className="row">
